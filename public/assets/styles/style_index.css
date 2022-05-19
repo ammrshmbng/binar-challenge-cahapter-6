@@ -1,0 +1,74 @@
+/* General */
+body{
+    background-image: url("../img/main-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    /* overflow: hidden; */
+    overflow-x: hidden;
+    }
+
+h1 {
+    font-size: 80px !important;
+    font-weight: bold;
+    font-family: "BEBAS NEUE";
+    color: white;
+  }
+  h2 {
+    font-size: 36px !important;
+    font-weight: bold;
+    font-family: "BEBAS NEUE";
+    color: white;
+  }
+  h3 {
+    font-size: 24px !important;
+    font-weight: bold;
+    font-family: "BEBAS NEUE";
+    color: white;
+  }
+  body {
+    font-size: 18px !important;
+    font-family: "Open Sans";
+    color: white;
+  }
+  sub {
+    font-size: 14px !important;
+    font-family: "Open Sans";
+    color: white;
+  }
+  button {
+    font-size: 16px !important;
+    font-family: "Open Sans";
+  }
+  nav {
+    font-size: 12px !important;
+    font-weight: bold;
+    font-family: "Open Sans";
+    color: white;
+    text-transform: uppercase;
+  }
+  
+  .debug {
+    border: 1px solid red;
+  }
+  
+  .nopadding {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  
+  /* Home */
+.flex-container {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+  }
+  
+  .btn-playnow {
+    width: 20vw;
+  }
+  

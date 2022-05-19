@@ -1,0 +1,39 @@
+buat halaman game render dengan API pake ejs
+
+bikin logic api ketika menang tulis data ke db kalo menang dan kalah
+dan tanggalnya
+
+buat halaman login yang datanya di baca melalui api ke db
+
+bikin halaman login untuk admin yang di baca dengan data statis 
+pakai json
+
+
+
+1 dashboard
+form nambahda
+form update
+halaman tampil data
+fungsi hapusdata
+
+
+table user
+    nama
+    email
+    jurusan
+    
+   
+
+table user_game_biodata
+    
+
+table user_game_history
+
+
+
+
+
+sequelize model:generate --name user_game --attributes nama:string,pekerjaan:string,hobby:string
+
+
+

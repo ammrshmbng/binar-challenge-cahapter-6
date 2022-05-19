@@ -1,0 +1,26 @@
+{
+  "name": "binar-challenge-chapter-6",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ammrshmbng/binar-challenge-cahpter-6.git"
+  },
+  "author": "ammar sihombing",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ammrshmbng/binar-challenge-cahpter-6/issues"
+  },
+  "homepage": "https://github.com/ammrshmbng/binar-challenge-cahpter-6#readme",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "pg": "^8.7.3",
+    "sequelize": "^6.19.0"
+  }
+}

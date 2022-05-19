@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p><a href="/tambahdata">tambah data</a></p>
+  <table border="1" cellspacing="0" cellpadding="5">
+    <thead>
+      <th>No.</th>
+      <th>ID</th>
+     <th>Nama</th>
+     <th>Pekerjaan</th>
+     <th>Hobby</th>
+      <th>Update</th>
+      <th>Delete</th>
+    </thead>
+    <tbody>   
+      <% let i = 1 %> 
+          <tr>
+        <% data.forEach((data)=>{  %> 
+     
+          <td><%= i %> </td>
+          <td><%=data.id  %> </td>
+          <td><%=data.nama  %> </td>
+          <td><%=data.pekerjaan  %> </td>
+          <td><%=data.hobby  %> </td>
+          <td><a href="/user_game/update/<%= data.id  %> ">update</a> </td>
+          <td><a href="/user_game/delete/<%= data.id %> ">hapus</a> </td>  
+        
+          <% i++ %> 
+        </tr>
+          
+          <% }) %>
+
+    </tbody>
+  </table>
+
+
+</body>
+</html>
