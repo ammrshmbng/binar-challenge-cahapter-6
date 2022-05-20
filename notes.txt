@@ -35,8 +35,8 @@ buat validasi login user admin secara statis baca melalui json
 
 
 sequelize model:generate --name user_game --attributes nama:string,pekerjaan:string,hobby:string
-sequelize model:generate --name user_game_biodata --attributes id_user:string,email
-sequelize model:generate --name user_game_biodata --attributes id_user:string,menang/kalah:string
+sequelize model:generate --name user_game_biodata --attributes id_user:string,email:string
+sequelize model:generate --name user_game_history --attributes id_user:string,menang_kalah:string
 
 
 user_game.create({
@@ -65,3 +65,4 @@ id_user: {
       },
 
 
+======
