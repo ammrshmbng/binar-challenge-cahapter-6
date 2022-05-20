@@ -1,6 +1,11 @@
+const {user_game} = require('../models');
+
 function dashboardController(req,res){
-    res.status(200)
-    res.render('dashboard');
+    user_game.findAll()
+    .then(data=>{
+        res.render('dashboard',{data});
+     
+    })
     
 }
 

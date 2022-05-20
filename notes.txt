@@ -25,15 +25,43 @@ table user
    
 
 table user_game_biodata
-    
 
 table user_game_history
+
+buat validasi login user admin secara statis baca melalui json
 
 
 
 
 
 sequelize model:generate --name user_game --attributes nama:string,pekerjaan:string,hobby:string
+sequelize model:generate --name user_game_biodata --attributes id_user:string,email
+sequelize model:generate --name user_game_biodata --attributes id_user:string,menang/kalah:string
 
+
+user_game.create({
+    email: req.body.email,
+    password: req.body.password,
+    user_game_biodatum: {
+      name: req.body.name,
+    }
+  }, {
+    include: {
+      model: user_game_biodata,
+    }
+  })
+
+
+id_user: {
+        type: Sequelize.INTEGER,
+        references: {
+          model: {
+            tableName: 'user_games',
+            schema: 'public'
+          },
+          key: 'id'
+        },
+        allowNull: false
+      },
 
 
